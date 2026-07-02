@@ -2,8 +2,14 @@
   "name": "@mi-ecommerce/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "mock:dev": "nx dev mi-ecommerce -- --mode mock",
+    "mock:serve": "nx serve mi-ecommerce -- --mode mock"
+  },
   "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
     "react": "^19.0.0",
