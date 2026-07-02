@@ -5,6 +5,42 @@
   "references": [
     {
       "path": "./apps/mi-ecommerce"
+    },
+    {
+      "path": "./packages/shared/ui"
+    },
+    {
+      "path": "./packages/shared/data-fetching"
+    },
+    {
+      "path": "./packages/shared/navigation"
+    },
+    {
+      "path": "./packages/checkout/components"
+    },
+    {
+      "path": "./packages/checkout/services"
+    },
+    {
+      "path": "./packages/checkout/module"
+    },
+    {
+      "path": "./packages/catalog/components"
+    },
+    {
+      "path": "./packages/catalog/services"
+    },
+    {
+      "path": "./packages/catalog/module"
+    },
+    {
+      "path": "./packages/customer/module"
+    },
+    {
+      "path": "./packages/customer/services"
+    },
+    {
+      "path": "./packages/customer/components"
     }
   ]
 }

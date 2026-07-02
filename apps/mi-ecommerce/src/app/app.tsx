@@ -1,13 +1,13 @@
 // Uncomment this line to use CSS modules
 // import styles from './app.module.css';
-import NxWelcome from "./nx-welcome";
 
 import { Route, Routes, Link } from 'react-router-dom';
+import { CartPage } from "./pages/cart/cart-page";
+import { CustomerPage } from './pages/customer/customer-page';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="@mi-ecommerce/mi-ecommerce"/>
     
     {/* START: routes */}
     {/* These routes and navigation have been generated for you */}
@@ -29,10 +29,12 @@ export function App() {
         }
       />
       <Route
-        path="/page-2"
-        element={
-          <div><Link to="/">Click here to go back to root page.</Link></div>
-        }
+        path="/cart/:cartId"
+        element={<CartPage />}
+      />
+      <Route
+        path="/customer/:cartId"
+        element={<CustomerPage />}
       />
     </Routes>
     {/* END: routes */}
